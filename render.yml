@@ -5,3 +5,8 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     autoDeploy: true
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://USERNAME:PASSWORD@cluster.mongodb.net/mydb
+      - key: AUTH_TOKEN
+        value: super_secret_token
